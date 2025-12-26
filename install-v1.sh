@@ -1,10 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-if [ "$(id -u)" -ne 0 ]; then
-  echo "❌ Jalankan sebagai root: sudo bash install.sh"
-  exit 1
-fi
+#!/bin/bash
 
 REMOTE_PATH="/var/www/pterodactyl/app/Services/Servers/ServerDeletionService.php"
 TIMESTAMP=$(date -u +"%Y-%m-%d-%H-%M-%S")
