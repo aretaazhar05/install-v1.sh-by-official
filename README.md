@@ -1,6 +1,7 @@
 #!/bin/bash
 
 REMOTE_PATH="/var/www/pterodactyl/app/Services/Servers/ServerDeletionService.php"
+
 TIMESTAMP=$(date -u +"%Y-%m-%d-%H-%M-%S")
 BACKUP_PATH="${REMOTE_PATH}.bak_${TIMESTAMP}"
 
